@@ -14,7 +14,8 @@
   },
   "dependencies": {
     "vue": "^2.1.0",
-    "vue-router": "2.x"
+    "vue-router": "2.x",
+    "vuex": "2.x"
   },
   "devDependencies": {
     "@hfe/generator-hfe": "latest",
