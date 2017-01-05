@@ -1,7 +1,11 @@
 # vue-webpack-boilerplate
 
 > fork自[webpack](https://github.com/vuejs-templates/webpack)，增加了美团HFE:awp发布需要的依赖和配置。
-
+使用：
+``` bash
+$ npm install -g vue-cli
+$ vue init Aladdin-ADD/hfe-vue-tpl
+```
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
 
 > This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack#1.0 my-project`
