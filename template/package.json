@@ -16,6 +16,8 @@
     "vue": "^2.1.0"
   },
   "devDependencies": {
+    "@hfe/generator-hfe": "latest",
+    "@hfe/generator-hfe-utils": "latest",
     "autoprefixer": "^6.4.0",
     "babel-core": "^6.0.0",
     {{#lint}}
