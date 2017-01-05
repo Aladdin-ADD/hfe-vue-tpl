@@ -7,6 +7,7 @@
   "scripts": {
     "start": "NODE_ENV=dev webpack-dev-server --config webpack.config.js --progress --colors",
     "build": "NODE_ENV=test webpack --config webpack.config.js --progress --colors",
+    "clean": "rm -rf ./build/*",
     "fix": "eslint --fix .",
     "prepub": "rm -rf ./build/*; NODE_ENV=test webpack --config webpack.config.js --progress --colors -p;gulp prepub",
     "staging": "rm -rf ./build/*; NODE_ENV=staging webpack --config webpack.config.js --progress --colors -p;gulp prepub",
