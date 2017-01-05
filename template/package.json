@@ -5,6 +5,12 @@
   "author": "{{ author }}",
   "private": true,
   "scripts": {
+    "start": "NODE_ENV=dev webpack-dev-server --config webpack.config.js --progress --colors",
+    "build": "NODE_ENV=test webpack --config webpack.config.js --progress --colors",
+    "fix": "eslint --fix .",
+    "prepub": "rm -rf ./build/*; NODE_ENV=test webpack --config webpack.config.js --progress --colors -p;gulp prepub",
+    "staging": "rm -rf ./build/*; NODE_ENV=staging webpack --config webpack.config.js --progress --colors -p;gulp prepub",
+    "publish": "rm -rf ./build/*; NODE_ENV=production webpack --config webpack.config.js --progress --colors -p; gulp publish",
     "dev": "node build/dev-server.js",
     "build": "node build/build.js"{{#unit}},
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run"{{/unit}}{{#e2e}},

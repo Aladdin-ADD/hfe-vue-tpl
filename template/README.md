@@ -13,6 +13,16 @@ npm run dev
 
 # build for production with minification
 npm run build
+
+# 发布（test）
+npm run prepub
+
+# 发布（st）
+npm run staging
+
+# 发布（online）
+npm run publish
+
 {{#unit}}
 
 # run unit tests
