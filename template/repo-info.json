@@ -1,0 +1,17 @@
+{
+    "name": "hotel-rights-declare",
+    "desc": "hotel-rights-declare",
+    "type": "hfe-generator",
+    "group": "hfe",
+    "version": "0.1.0",
+    "author": {
+        "name": "chendanjun",
+        "email": "chendanjun@meituan.com"
+    },
+    "publishType":"vip",
+    "root": "./src",
+    "port": "8899",
+    "ssi": true,
+    "timestamp": 1469082622865,
+    "useCombo": false
+}

@@ -1,0 +1,14 @@
+{
+    "data": [{
+        "name": "hotel-rights-declare",
+        "version": "0.1.0",
+        "src": "",
+        "useOfflineZip": true,
+        "zipVersion": "2015101803",
+        "iosVersion": "1.0.0",
+        "androidVersion": "1.0.0",
+        "iosUpdateType": 1,
+        "androidUpdateType": 1,
+        "offlinePreUrl": "http://awp-assets.meituan.net/"
+    }]
+}
