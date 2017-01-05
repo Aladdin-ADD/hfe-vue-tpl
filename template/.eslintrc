@@ -1,0 +1,4 @@
+{
+  "extend": "hfe",
+  "plugins": ["html"]
+}
