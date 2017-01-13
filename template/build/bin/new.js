@@ -108,13 +108,14 @@ describe('{{ComponentName}}', () => {
 ];
 
 // 添加到 components.json
-const componentsFile = require('../../components.json');
+// const componentsFile = require('../../components.json');
+const componentsFile = require('./components.json');
 if (componentsFile[componentname]) {
   console.error(`${componentname} 已存在.`);
   process.exit(1);
 }
 componentsFile[componentname] = `./packages/${componentname}/index.js`;
-fileSave(path.join(__dirname, '../../components.json'))
+fileSave(path.join(__dirname, './components.json'))
   .write(JSON.stringify(componentsFile, null, '  '), 'utf8')
   .end('\n');
 
@@ -126,7 +127,8 @@ Files.forEach(file => {
 });
 
 // 添加到 nav.config.json
-const navConfigFile = require('../../examples/nav.config.json');
+// const navConfigFile = require('../../examples/nav.config.json');
+const navConfigFile = require('./nav.config.json');
 
 Object.keys(navConfigFile).forEach(lang => {
   let groups = navConfigFile[lang][2].groups;
