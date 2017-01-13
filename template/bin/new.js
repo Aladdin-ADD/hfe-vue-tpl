@@ -18,17 +18,17 @@ const chineseName = process.argv[3] || componentname;
 const ComponentName = uppercamelcase(componentname);
 const PackagePath = path.resolve(__dirname, '../src/components', componentname);
 const Files = [
-  {
-    filename: 'index.js',
-    content: `import ${ComponentName} from './src/main';
+  // {
+//     filename: 'index.js',
+//     content: `import ${ComponentName} from './main';
 
-/* istanbul ignore next */
-${ComponentName}.install = function(Vue) {
-  Vue.component(${ComponentName}.name, ${ComponentName});
-};
+// /* istanbul ignore next */
+// ${ComponentName}.install = function(Vue) {
+//   Vue.component(${ComponentName}.name, ${ComponentName});
+// };
 
-export default ${ComponentName};`
-  },
+// export default ${ComponentName};`
+//   },
 //   {
 //     filename: 'cooking.conf.js',
 //     content: `var cooking = require('cooking');
@@ -68,7 +68,7 @@ export default ${ComponentName};`
 // }`
 //   },
   {
-    filename: 'src/main.vue',
+    filename: `${componentname}.vue`,
     content: `<template>
   <div class="el-${componentname}"></div>
 </template>
@@ -80,9 +80,10 @@ export default {
 </script>`
   },
   {
-    filename: `../../test/${componentname}.md`,
+    filename: `${componentname}.md`,
     content: `## ${chineseName}`
   },
+
   // {
   //   filename: path.join('../../examples/docs/en-us', `${componentname}.md`),
   //   content: `## ${componentname}`
