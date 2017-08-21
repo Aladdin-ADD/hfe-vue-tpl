@@ -29,6 +29,9 @@ module.exports = {
       }
     }
   },
+  'globals': {
+    'document': true
+  },
   {{/if_eq}}
   // add your custom rules here
   'rules': {
@@ -40,10 +43,11 @@ module.exports = {
     {{/if_eq}}
     {{#if_eq lintConfig "airbnb"}}
     // don't require .vue extension when importing
-    'import/extensions': ['error', 'always', {
+    'import/extensions': ['off', 'always', {
       'js': 'never',
       'vue': 'never'
     }],
+    'import/no-unresolved': [0, {commonjs: true, amd: true}],
     // allow optionalDependencies
     'import/no-extraneous-dependencies': ['error', {
       'optionalDependencies': ['test/unit/index.js']
